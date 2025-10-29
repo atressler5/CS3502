@@ -1,0 +1,80 @@
+SJF scheduling
+
+Will run Name: T6
+Tid: 5
+Priority: 1      
+Burst: 10        
+
+Task T6 finished.  
+Waiting time: 0    
+Turnaround time: 10
+
+
+Will run Name: T4  
+Tid: 3
+Priority: 5        
+Burst: 15
+
+Task T4 finished.  
+Waiting time: 10   
+Turnaround time: 25
+
+
+Will run Name: T1
+Tid: 0
+Priority: 4
+Burst: 20
+
+Task T1 finished.
+Waiting time: 25
+Turnaround time: 45
+
+
+Will run Name: T5
+Tid: 4
+Priority: 5
+Burst: 20
+
+Task T5 finished.
+Waiting time: 45
+Turnaround time: 65
+
+
+Will run Name: T2
+Tid: 1
+Priority: 3
+Burst: 25
+
+Task T2 finished.
+Waiting time: 65
+Turnaround time: 90
+
+
+Will run Name: T3
+Tid: 2
+Priority: 3
+Burst: 25
+
+Task T3 finished.
+Waiting time: 90
+Turnaround time: 115
+
+
+Will run Name: T8
+Tid: 7
+Priority: 10
+Burst: 25
+
+Task T8 finished.
+Waiting time: 115
+Turnaround time: 140
+
+
+Will run Name: T7
+Tid: 6
+Priority: 3
+Burst: 30
+
+Task T7 finished.
+Waiting time: 140
+Turnaround time: 170
