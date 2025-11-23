@@ -1,14 +1,10 @@
-public class Table{
+public class Table implements DiningServer{
 
-    static Philosopher[] philosophers = new Philosopher[5];
+    public void takeForks(int philosopherNumber){
 
-    public static void main(String[] args){
-        for(Philosopher p : philosophers){
-            p = new Philosopher();
-        }
+    }
 
-        
-
+    public void returnForks(int philosopherNumber){
 
     }
 
