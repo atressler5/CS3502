@@ -10,25 +10,33 @@ public class Philosopher implements Runnable{
     }
 
     public void think(){
-        int randomTimeMilliseconds = 1000 + (int)(Math.random() * 2000);
-        try {
-            System.out.println("Philosopher " + number + " is thinking.");
-            Thread.sleep(randomTimeMilliseconds);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        System.out.println("Philosopher " + number + " is thinking.");
+        sleep1to3secs();
     }
 
     public void eat(){
-        System.out.println("Philosopher " + number + " is thinking.");
-        
+        System.out.println("Philosopher " + number + " is trying to eat.");
+        myTable.takeForks(number);
+        sleep1to3secs();
+        System.out.println("Philosopher " + number + " is currently eating.");
+        myTable.returnForks(number);   
+        System.out.println("Philosopher " + number + " has returned their forks.");
     }
 
     public void run(){
         while(true){
             think();
             eat();
+        }
+    }
+
+    private void sleep1to3secs(){
+        int randomTimeMilliseconds = 1000 + (int)(Math.random() * 2000);
+        try {
+            Thread.sleep(randomTimeMilliseconds);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
     }
     
