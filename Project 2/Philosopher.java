@@ -10,14 +10,14 @@ public class Philosopher implements Runnable{
     }
 
     public void think(){
-        System.out.println("Philosopher " + number + " is thinking.");
+        System.out.println("Philosopher " + number + " is THINKING.");
         sleep1to3secs();
     }
 
     public void eat(){
-        System.out.println("Philosopher " + number + " is trying to eat.");
-        myTable.takeForks(number);;
-        System.out.println("Philosopher " + number + " is currently eating.");
+        System.out.println("Philosopher " + number + " is HUNGRY and trying to eat.");
+        myTable.takeForks(number);
+        System.out.println("Philosopher " + number + " is currently EATING.");
         sleep1to3secs();
         myTable.returnForks(number);   
         System.out.println("Philosopher " + number + " has returned their forks.");

@@ -4,14 +4,10 @@ public class Runner {
         Table t = new Table();
         makePhilosophers(t);
         startPhilosophers(t);
-        
-        
-        
-        //printPhiloIds(t);
-        
     }
 
     public static void makePhilosophers(Table t){
+        //doing it the dumb way to make sure no scope shennanigans are afoot
         t.philosophers[0] = new Philosopher(t);
         t.philosophers[1] = new Philosopher(t);
         t.philosophers[2] = new Philosopher(t);
@@ -24,14 +20,5 @@ public class Runner {
             new Thread(p, "Philosopher " + p.number).start();
         }
     }
-
-    public static void printPhiloIds(Table t){
-        for(Philosopher p : t.philosophers){
-            System.out.println(p.number);
-        }
-    }
-
-
-
-
+    
 }
