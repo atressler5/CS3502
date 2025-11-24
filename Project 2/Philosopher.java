@@ -16,9 +16,9 @@ public class Philosopher implements Runnable{
 
     public void eat(){
         System.out.println("Philosopher " + number + " is trying to eat.");
-        myTable.takeForks(number);
-        sleep1to3secs();
+        myTable.takeForks(number);;
         System.out.println("Philosopher " + number + " is currently eating.");
+        sleep1to3secs();
         myTable.returnForks(number);   
         System.out.println("Philosopher " + number + " has returned their forks.");
     }
